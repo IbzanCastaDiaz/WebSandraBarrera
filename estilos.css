@@ -1,7 +1,7 @@
 /* ---------------------variable */
 :root{
-    --base1-color:   #a0bd2c;
-    --base2-color: #5f701b;
+    --base1-color:   #bf9990;
+    --base2-color: #886158;
     --black-color: #313337;
     /* Tipografia */
     --normal: 12px;
@@ -12,14 +12,9 @@
     }
     /* #a0bd2c */
 
-/* navbar */
-.navbar {
-    background:linear-gradient(165deg, black, black, 80%, var(--base1-color));
+body {
+    background-color: #f9f0e8a8;
 }
-.navbar img{
-    width: 100px;
-}
-/* /navbar */
 
 /* Main */
 #main .carousel-inner img {
@@ -47,22 +42,14 @@
 }
 /* /Main */
 
-/* nosotros home */
-.nosotros-home {
-    background-image: url("images/PanelesInstalados.jpeg");
-    background-size: cover;
-    background-position: center center;
-}
-/* /nosotros home */
-
 /* footer */
 #footer {
-    background:linear-gradient(90deg, var(--base1-color), var(--base1-color), 90%, var(--base2-color));
-    /* background:linear-gradient(90deg, #1c3643, #273b47, 25%, #1e5372); */
-}
-
-#footer {
-    color:white;
+    height: 300px;
+    background-image: url(images/logo.jpeg);
+    background-size: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: var(--black-color);
 }
 #footer img {
     padding: 10px;
@@ -113,7 +100,11 @@
 .btn-innova:hover {
     background-color:var(--base2-color);
 }
+.card {
+    border-radius: 25px;
+}
 .btn-innovaleer {
+    border-radius: 25px;
     background: var(--base1-color);
     color: var(--black-color);
 }
@@ -143,10 +134,16 @@
     font-size: 50px;
     font-weight: 600;
     }
+    #footer {
+        background-size: 300px;
+    }
 }
 @media screen and (max-width: 480px) {
     .title1 h1{
     font-size: 40px;
+    }
+    #footer {
+        background-size: 250px;
     }
 }
 /* /media */
